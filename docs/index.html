@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <title>Объединенные капиталы</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- /Fonts -->
+
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+   <!-- /Favicon -->
+
+  <!-- Slisk slider -->
+  <link rel="stylesheet" href="libs/slider/slick.css">
+  <link rel="stylesheet" href="libs/slider/slick-theme.css">
+  <!-- /Slisk slider -->
+
+  <!-- Fancybox -->
+  <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css" />
+  <!-- /Fancybox -->
+
+  <!-- Styles -->
+	<link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- /Styles -->
+
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__menu wrapper">
+      <a href="/" class="header__logo">
+        <img src="img/logo.svg" alt="" class="svg header__icon">
+        <span class="header__logoText text_18_bold">UnitedCapitals</span>
+      </a>
+      <div class="header__menus">
+        <nav class="header__menuNav">
+          <ul class="header__menuList">
+            <li class="header__menuItem">
+              <a href="saving.html" class="menuListLink text_16_link">Сбережения</a>
+            </li>
+            <li class="header__menuItem">
+              <a href="credit.html" class="menuListLink text_16_link">Займы</a>
+            </li>
+            <li class="header__menuItem">
+              <a href="partners.html" class="menuListLink text_16_link">Партнёрам</a>
+            </li>
+            <li class="header__menuItem">
+              <a href="#calcPopup" class="fancybox menuListLink text_16_link">Рассчитать</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menuBtn menuBtn_ml">
+          <span class="menuBtn__bottom"></span>
+          <span class="menuBtn__bottom"></span>
+          <span class="menuBtn__bottom"></span>
+        </div>
+        <div class="telMail telMail_ml">
+          <a href="tel:+88000000000" class="text_18_bold telMail__phone">8 800 000 00 00</a>
+          <a href="mailto:support@unitedcapitals.ru" class="text_12_roboto telMail__email">support@unitedcapitals.ru</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__absMenu">
+      <div class="wrapperLittle header__absContent">
+        <div class="header__absRow">
+          <ul class="null header__absAllList">
+            <li class="header__absAllItem">
+              <a href="saving.html" class="h3 header__absAllLink">Сбережения</a>
+            </li>
+            <li class="header__absAllItem">
+              <a href="credit.html" class="h3 header__absAllLink">Займы</a>
+            </li>
+            <li class="header__absAllItem">
+              <a href="partners.html" class="h3 header__absAllLink">Партнёрам</a>
+            </li>
+            <li class="header__absAllItem">
+              <a href="#calcPopup" class="fancybox h3 header__absAllLink">Рассчитать</a>
+            </li>
+          </ul>
+          <div class="header__absInfs">
+            <a href="tel:+88000000000" class="bold text_16_link header__abstel">8 800 000 00 00</a>
+            <a href="mailto:support@unitedcapitals.ru" class="bold text_16_link header__absEmail">support@unitedcapitals.ru</a>
+            <span class="header__absAdress textMiddle">
+              Москва, Бульвар Энтузиастов, 2. БЦ Голден Гейт, Башня Б, офис 3.50
+            </span>
+          </div>
+        </div>
+        <div class="header__absRow header__absRow_column">
+          <ul class="header__absList">
+            <li class="header__absItem">
+              <a href="aboutProject.html" class="header__link text_18_bold">О проекте</a>
+            </li>
+            <li class="header__absItem">
+              <a href="faq.html" class="header__link text_18_bold">Вопросы - ответы</a>
+            </li>
+            <li class="header__absItem">
+              <a href="contacts.html" class="header__link text_18_bold">Контакты</a>
+            </li>
+            <li class="header__absItem">
+              <a href="#textPopup" class="fancybox header__link text_18_bold">Политика конфиденциальности</a>
+            </li>
+            <li class="header__absItem">
+              <a href="aboutProject.html" class="header__link text_18_bold">Юридическая информация</a>
+            </li>
+          </ul>
+          <div class="header__absInfs header__absInfs_mob">
+            <a href="tel:+88000000000" class="bold text_16_link header__abstel">8 800 000 00 00</a>
+            <a href="mailto:support@unitedcapitals.ru" class="bold text_16_link header__absEmail">support@unitedcapitals.ru</a>
+            <span class="header__absAdress textMiddle">
+              Москва, Бульвар Энтузиастов, 2. БЦ Голден Гейт, Башня Б, офис 3.50
+            </span>
+          </div>
+          <div class="header__absRowSohials sohial">
+            <a target="_blank" href="https://www.facebook.com/unitedcapitals" class="header__absRowSohial sohial__link">
+              <img src="img/facebook.svg" alt="" class="svg sohial__icon header__absRowSohialIcon">
+            </a>
+            <a target="_blank" href="https://vk.com/unitedcapitals" class="header__absRowSohial sohial__link">
+              <img src="img/vk.svg" alt="" class="svg sohial__icon header__absRowSohialIcon">
+            </a>
+            <a target="_blank" href="https://www.youtube.com/unitedcapitals" class="header__absRowSohial sohial__link">
+              <img src="img/youtube.svg" alt="" class="svg sohial__icon header__absRowSohialIcon">
+            </a> 
+            <a target="_blank" href="https://www.instagram.com/unitedcapitals" class="header__absRowSohial sohial__link">
+              <img src="img/insta.svg" alt="" class="svg sohial__icon header__absRowSohialIcon">
+            </a>
+          </div>
+        </div>
+        <button class="header__absClosebtn">
+          <img src="img/ico_close.svg" alt="" class="header__absCloseIcon svg">
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+
+
+  <!-- Main -->
+  <main class="main">
+    <section class="oursMoney ">
+      <div class="wrapperMiddle oursMoney__wrapper">
+        <div class="oursMoney__circle"></div>
+        <div class="oursMoney__content">
+          <h3 class="oursMoney__title h3 null">Ваши деньги для больших целей!</h3>
+          <span class="oursMoney__about textLarge">Доверительные вклады под 24% годовых</span>
+          <ul class="oursMoney__services">
+            <li class="oursMoney__service">
+              <img src="img/Master_Card.svg" alt="" class="oursMoney__sirviceImg svg">
+            </li>
+            <li class="oursMoney__service">
+              <img src="img/Visa.svg" alt="" class="oursMoney__sirviceImg svg">
+            </li>
+            <li class="oursMoney__service">
+              <img src="img/Apple_Pay.svg" alt="" class="oursMoney__sirviceImg svg">
+            </li>
+          </ul>
+          <div class="oursMoney__btns">
+            <a href="saving.html" class="button button_dark oursMoney__btn">Сделать вклад</a>
+            <span class="oursMoney__btnOr">/</span>
+            <a href="#calcPopup" class="fancybox button oursMoney__btn">Получить займ</a>
+          </div>
+        </div>
+        <div class="oursMoney__phone">
+          <div class="oursMoney__phoneCircle"></div>
+          <div class="oursMoney__phoneCircle2"></div>
+          <img src="img/phone.png" alt="" class="oursMoney__phoneImg">
+        </div>
+
+      </div>
+    </section>
+    <section class="howWorks wrapperMiddle">
+      <div class="photoCircle">
+        <div class="photoCircle__circle"></div>
+        <div class="photoCircle__circle2"></div>
+        <div class="photoCircle__circle3"></div>
+        <img src="img/person.png" alt="" class="photoCircle__img">
+      </div>
+      <div class="howWorks__content">
+        <h3 class="howWorks__title h3 null">Как это работает?</h3>
+        <div class="howWorks__texts">
+          <p class="null textMiddle textGrey howWorks__text">Наша команда уверена, что одно из самых важных в финансовых отношениях между людьми - это доверие. Поэтому вы можете получить займы по ставке ниже, чем у банков, а вложить свои средства под 24% годовых.</p>
+          <p class="null textMiddle textGrey howWorks__text">Условия вклада просты и примитивны, а решение получения займа вы можете получить за 2 часа после отправки заявки</p>
+        </div>
+        <div class="howWorks__more text_12_orange">
+          остались вопросы? Читайте
+          <a href="faq.html" target="_blank" class="howWorks__moreLink text_12_orange">Вопросы–ответы</a>
+        </div>
+        <a href="faq.html" target="_blank" class="moreBtn howWorks__moreBtn">
+          <img src="img/right.svg" alt="" class="svg moreBtn__icon">
+        </a>
+      </div>
+    </section>
+    <section class="ourContributions">
+      <div class="ourContributions__circleHalf">
+        <div class="ourContributions__circle"></div>
+      </div> 
+      <div class="wrapperMiddle ourContributions__wrapper">
+        <div class="ourContributions__circle2"></div>
+        <div class="ourContributions__circle3"></div>
+        <h3 class="h4 null ourContributions__title">Мы поддерживаем: бизнес, покупку авто и недвижимости</h3>
+        <p class="null ourContributions__about textMiddle textGrey">Как мы инвестируем деньги, как работаем с реальным сектором бизнеса для создания вашего будущего</p>
+        <div class="ourContributions__tabContents">
+          <div class="ourContributions__tabContent ">
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Минимальный  размер вклада </span>
+              <div class="textMiddle textGrey bold ourContributions__tabContentPrice">от 1 500 000 рублей </div>
+            </div>
+            <div class="ourContributions__tabContentLine"></div>
+            <div class="ourContributions__tabContentImgBlock">
+              <img src="img/giro.png" alt="" class="ourContributions__tabContentImg">
+            </div>
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Иногда средства необходимо прямо сейчас для решения критичных ситуаций. Мы поможем вам</span>
+              <a href="faq.html" class="text_12_orange ourContributions__tabContentLink">Подробнее</a>
+            </div>
+          </div>
+          <div class="ourContributions__tabContent ">
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Минимальный  размер вклада   </span>
+              <div class="textMiddle textGrey bold ourContributions__tabContentPrice">от 50 000  рублей</div>
+            </div>
+            <div class="ourContributions__tabContentLine"></div>
+            <div class="ourContributions__tabContentImgBlock">
+              <img src="img/clock.png" alt="" class="ourContributions__tabContentImg">
+            </div>
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Срок вложения от 2 до 3 месяцев. Под 5% прибыли в месяц</span>
+              <a href="faq.html" class="text_12_orange ourContributions__tabContentLink">Подробнее</a>
+            </div>
+          </div>
+          <div class="ourContributions__tabContent active">
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Выдаем средства на личные цели  </span>
+              <div class="textMiddle textGrey bold ourContributions__tabContentPrice">от 250 000 рублей</div>
+            </div>
+            <div class="ourContributions__tabContentLine"></div>
+            <div class="ourContributions__tabContentImgBlock">
+              <img src="img/auto.png" alt="" class="ourContributions__tabContentImg">
+            </div>
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Срок вложения от 12 до 36 месяцев. Под 11% прибыли в месяц</span>
+              <a href="faq.html" class="text_12_orange ourContributions__tabContentLink">Подробнее</a>
+            </div>
+          </div>
+          <div class="ourContributions__tabContent ">
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Минимальный размер вклада </span>
+              <div class="textMiddle textGrey bold ourContributions__tabContentPrice">от 250 000  рублей</div>
+            </div>
+            <div class="ourContributions__tabContentLine"></div>
+            <div class="ourContributions__tabContentImgBlock">
+              <img src="img/business.png" alt="" class="ourContributions__tabContentImg">
+            </div>
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Срок вложения от 3 до 36 месяцев. Под 11% прибыли в месяц</span>
+              <a href="faq.html" class="text_12_orange ourContributions__tabContentLink">Подробнее</a>
+            </div>
+          </div>
+          <div class="ourContributions__tabContent ">
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Минимальный размер вклада  </span>
+              <div class="textMiddle textGrey bold ourContributions__tabContentPrice">от 500 000  рублей</div>
+            </div>
+            <div class="ourContributions__tabContentLine"></div>
+            <div class="ourContributions__tabContentImgBlock">
+              <img src="img/house.png" alt="" class="ourContributions__tabContentImg">
+            </div>
+            <div class="ourContributions__tabContentText">
+              <span class="textMiddle textGrey">Срок вложения от 36 до 60 месяцев. Под 11% прибыли в месяц.</span>
+              <a href="faq.html" class="text_12_orange ourContributions__tabContentLink">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="ourContributions__tabsBl">
+          <div class="ourContributions__tabs">
+            <div class="ourContributions__tab">
+              <img src="img/up.svg" alt="" class="svg ourContributions__tabUp">
+              <div class="ourContributions__tabCircle circleIcon circleIcon_blue">
+                <img src="img/rub.svg" alt="" class="svg ourContributions__tabIcon">
+              </div>
+              <span class="ourContributions__tabName textGrey textMiddle bold">Микрозаймы</span>
+            </div>
+            <div class="ourContributions__tab">
+              <img src="img/up.svg" alt="" class="svg ourContributions__tabUp">
+              <div class="ourContributions__tabCircle circleIcon circleIcon_yellow">
+                <img src="img/diamond.svg" alt="" class="svg ourContributions__tabIcon">
+              </div>
+              <span class="ourContributions__tabName textGrey textMiddle bold">Ломбардные займы</span>
+            </div>
+            <div class="ourContributions__tab active">
+              <img src="img/up.svg" alt="" class="svg ourContributions__tabUp">
+              <div class="ourContributions__tabCircle circleIcon circleIcon_lightBlue">
+                <img src="img/car.svg" alt="" class="svg ourContributions__tabIcon">
+              </div>
+              <span class="ourContributions__tabName textGrey textMiddle bold">Заём под залог авто</span>
+            </div>
+            <div class="ourContributions__tab">
+              <img src="img/up.svg" alt="" class="svg ourContributions__tabUp">
+              <div class="ourContributions__tabCircle circleIcon circleIcon_orange">
+                <img src="img/business.svg" alt="" class="svg ourContributions__tabIcon">
+              </div>
+              <span class="ourContributions__tabName textGrey textMiddle bold">Бизнес</span>
+            </div>
+            <div class="ourContributions__tab">
+              <img src="img/up.svg" alt="" class="svg ourContributions__tabUp">
+              <div class="ourContributions__tabCircle circleIcon circleIcon_blue">
+                <img src="img/home.svg" alt="" class="svg ourContributions__tabIcon">
+              </div>
+              <span class="ourContributions__tabName textGrey textMiddle bold">Жилищная программа</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section class="performOperations">
+      <div class="wrapperMiddle performOperations__wrapper">
+        <div class="performOperations__circle"></div>
+        <div class="performOperations__circle2"></div>
+        <div class="performOperations__content">
+          <div class="circleIcon circleIcon_orange">
+            <img src="img/cursor.svg" alt="" class="circleIcon__icon svg">
+          </div>
+          <h3 class="h3 null performOperations__title">Совершайте операции, не выходя из дома</h3>
+          <p class="null performOperations__about textMiddle textGrey">Если при работе с финансовыми организациями вы сталкиваетесь с долгим ожиданием у бумажной волокитой - мы облегчим процесс вклада и займа денег</p>
+          <a href="faq.html" class="performOperations__link text_12_orange orangeLink">Все онлайн возможности</a>
+        </div>
+        <img src="img/operations.png" alt="" class="performOperations__img">
+      </div>
+    </section> 
+    <section class="canHelp wrapperMiddle">
+      <img src="img/women.png" alt="" class="canHelp__img">
+      <div class="canHelp__content">
+        <div class="circleIcon circleIcon_lightBlue">
+          <img src="img/phoneIcon.png" alt="" class="circleIcon__icon">
+        </div>
+        <h3 class="h3 null canHelp__title">Мы можем помочь с финансовым вопросом</h3>
+        <p class="null canHelp__text textMiddle textGrey">Наши операторы доступны 24/7. Мы готовы помочь Вам в сложившейся ситуации.</p>
+        <a href="tel:" class="orangeLink orangeLink_blue text_12_orange text_12_orange_blue">чем мы можем помочь?</a>
+      </div>
+    </section>
+    <section class="completelyTransparent">
+      <div class="wrapperLittle2 completelyTransparent__wrapper">
+        <div class="completelyTransparent__circleIcon circleIcon circleIcon_orange">
+          <img src="img/eye.svg" alt="" class="svg circleIcon__icon">
+        </div>
+        <h3 class="h3 null completelyTransparent__title">Полностью прозрачная работа кооператива</h3>
+        <p class="null completelyTransparent__about textMiddle textGrey">Прозрачная и простоая работа кооператива, открытые документы и обороты. Просто для инвесторов и заемщиков.</p>
+        <a href="aboutProject.html" class="completelyTransparent__link orangeLink text_12_orange">о компании</a>
+      </div>
+    </section>
+    <section class="roadmap">
+      <div class="wrapper">
+        <h3 class="h3 null textWhite roadmap__title">Дорожная карта проекта</h3>
+        <div class="roadmap__slider">
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">1Q 2020</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Оформление концепции. Регистрация. Создание сайта.</span>
+                <p class="roadmap__text null textMiddle">Формирование Актива команды единомышленников для рекламного продвижения. Запуск «Партнерской программы». </p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date"> 2Q 2020 </span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Реализация первый этап. Тестирование</span>
+                <p class="roadmap__text null textMiddle">Создание и отработка маркетингового плана. Первый практический семинар - обучение.</p>
+              </li>
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Формирование оборотного капитала для запуска в работу «первого инструмента»</span>
+                <p class="roadmap__text null textMiddle">Выдача займов. Отладка и адаптация алгоритмов безопасности согласно утвержденной концепции.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">3Q 2020</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Реализация второй этап</span>
+                <p class="roadmap__text null textMiddle">Анализ и корректировка работы по увеличению оборотного Капитала. Анализ и определение структуры для реализации следующих инструментов для получения доходов. Регистрация структурных подразделений и запуск их деятельности.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">4Q 2020</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Эксплуатация и поддержка</span>
+                <p class="roadmap__text null textMiddle">Внедрение следующих инструментов для получения доходов. Анализ работоспособности сайта, алгоритмов безопасности расширение их функциональных возможностей. Разработка и внедрение концепции карьерного роста партнеров. Определение календарного плана мероприятий на 2021 год. Анализ проделанной работы и подведение Итогов.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">1Q 2021</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Развитие </span>
+                <p class="roadmap__text null textMiddle">Внутренний аудит проделанной работы за 2020 год. Внедрение процесса разработки и реализации новых инструментов для получения доходов на основе «Голоса клиента». Запуск программы по реализации проектов и инициатив членов и партнеров Сообщества. Целевое расширение географии деятельности Сообщества. Расширение команды. Анализ и подготовка к созданию Мобильной версии, разработка бета-версии.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">2Q 2021</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Развитие - Реструктуризация сообщества</span>
+                <p class="roadmap__text null textMiddle">создание Ассоциации КПК согласно требованиям ФЗ №190 «О кредитной кооперации» от 18.07.2009г. Корректировка новых структурных взаимодействий. Концентрация усилий на масштабирование и увеличение оборотного капитала. Актуализация внутренних стандартов и регламентов согласно собственной Концепции и основного законодательства.  Внедрение в опытную эксплуатацию мобильной версии, отладка технологии.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">3Q 2021</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Развитие </span>
+                <p class="roadmap__text null textMiddle">Внеочередной внутренний аудит результатов и эффективности работы всех структур и подразделений Сообщества. Первая конференция определения стратегии развития Сообщества с участием инициаторов проекта, руководителей структурных подразделений, управляющих партнеров и инициативных членов Сообщества. Анализ скорости масштабирования и прироста оборотного капитала. Итоговое дополнение концепции развития Сообщества.</p>
+              </li>
+            </ul>
+          </div>
+          <div class="roadmap__slide">
+            <div class="roadmap__dot"></div>
+            <span class="roadmap__date">4Q 2021</span>
+            <ul class="roadmap__slideList">
+              <li class="roadmap__slideItem">
+                <span class="roadmap__titles textLarge bold">Развитие </span>
+                <p class="roadmap__text null textMiddle">Ситуационный анализ рынка и законодательной базы, подготовка Сообщества к выходу на зарубежных клиентов из стран СНГ и южной Европы. Определение стратегии развития рынка новых клиентов. Определение календарного плана мероприятий на 2022 год. Анализ проделанной работы и подведение Итогов за 2022 год. </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="roadmap__textBg">UnitedCapitals</div>
+    </section>
+    <section class="aboutProject">
+      <div class="wrapperMiddle">
+        <h3 class="h3 null aboutProject__title">О проекте в цифрах</h3>
+        <p class="null aboutProject__about textMiddle textGrey">Товарищи! начало повседневной работы по формированию позиции требуют от нас анализа</p>
+        <ul class="aboutProject__list">
+          <li class="aboutProject__item">
+            <span class="aboutProject__number">15
+              <span class="circleIcon circleIcon_orange aboutProject__circle">
+                <img src="img/check.svg" alt="" class="circleIcon__icon svg">
+              </span>
+            </span>
+            <span class="aboutProject__text textGrey textMiddle">Минут - срок подачи документов</span>
+          </li>
+          <li class="aboutProject__item">
+            <span class="aboutProject__number">5
+              <span class="circleIcon circleIcon_blue aboutProject__circle">
+                <img src="img/menus.svg" alt="" class="circleIcon__icon svg">
+              </span>
+            </span>
+            <span class="aboutProject__text textGrey textMiddle">дней – срок подачи документов</span>
+          </li>
+          <li class="aboutProject__item">
+            <span class="aboutProject__number">
+              10к
+              <span class="circleIcon circleIcon_yellow aboutProject__circle">
+                <img src="img/rub.svg" alt="" class="svg circleIcon__icon">
+              </span>
+            </span>
+            <span class="aboutProject__text textGrey textMiddle">Минимальная сумма вклада</span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="itsTime wrapperMiddle">
+      <div class="itsTime_photoCircle photoCircle photoCircle_v2">
+        <div class="photoCircle__circle"></div>
+        <div class="photoCircle__circle2"></div>
+        <div class="photoCircle__circle3"></div>
+        <img src="img/note.png" alt="" class="photoCircle__img photoCircle__img_v2">
+      </div>
+      <div class="itsTime__content">
+        <h3 class="h3 null itsTime__title">Настало время</h3>
+        <span class="itsTime__about textLarge">выгодных займов и надежных инвестиций</span>
+        <div class="itsTime__btns">
+          <a href="saving.html" class="itsTime__btn button button_dark">Сделать вклад</a>
+          <a href="#calcPopup" class="fancybox itsTime__btn button">Получить займ</a>
+        </div>
+      </div>
+    </section>
+    <section class="formSection">
+      <div class="wrapperMiddle formSection__wrapper">
+        <div class="formSection__circle"></div>
+        <div class="formSection__circle2"></div>
+        <div class="formSection__circleIcon circleIcon circleIcon_lightBlue">
+          <img src="img/mail.svg" alt="" class="svg circleIcon__icon">
+        </div>
+        <h3 class="h3 null formSection__title">Напишите нам</h3>
+        <form class="formSection__form form-message">
+          <div class="formSection__inputBlocke inputBlock">
+            <input type="text" name="name" placeholder="Имя" class="input">
+            <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+          </div>
+          <div class="formSection__inputBlocke inputBlock">
+            <input type="text" name="phone" placeholder="Телефон" class="input">
+            <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+          </div>
+          <div class="formSection__inputBlocke inputBlock">
+            <input type="text" name="email" placeholder="Эл. почта" class="input ">
+            <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+          </div>
+          <button type="submit" class="moreBtn formSection__moreBtn">
+            <img src="img/right.svg" alt="" class="svg moreBtn__icon">
+          </button>
+          <button type="submit" class="formSection__btn button button_dark">отправки</button>
+          <label for="checkbox" class="formSection__label checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" class="checkbox__check">
+            <span class="checkboxText textMiddle textGrey">
+              <span class="checkboxText__text">
+                Я согласен на обработку моих персонадбных данных
+              </span>
+            </span>
+          </label>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <!-- /Main -->
+
+  <!-- Popup -->
+  <div class="calcPopup" id="calcPopup">
+    <div class="calcPopup__contentOver">
+      <div class="calcPopup__content">
+        <div class="calcPopup__circle"></div>
+        <div class="calcPopup__circle2"></div>
+        <h3 class="calcPopup__title null h3">Рассчитать сумму займа</h3>
+        <form class="calcPopup__form form-payment">
+          <div class="calcPopup__lines show">
+            <div class="calcPopup__line">
+              <span class="calcPopup__type">Сумма</span>
+              <h5 class="h5 null calcPopup__value">
+                <span id="calcPopup__value">350</span>.000 Руб.
+              </h5>
+              <div class="calcPopup__lineRangeWrapper">
+                <input name="sum" type="range" min="0" max="500" value="3" class="calcPopup__lineRange calcPopup__lineRange_first" id="myRange" oninput="range()">
+              </div>
+              <div class="calcPopup__lineValues">
+                <span class="textSmallGotham calcPopup__lineVars"></span>
+                <span class="textSmallGotham calcPopup__lineVars">до 500.000</span>
+              </div>
+            </div>
+            <div class="calcPopup__line">
+              <span class="calcPopup__type">Срок</span>
+              <h5 class="h5 null calcPopup__value">
+                <span id="calcPopup__value2">2</span> 
+                года</h5>
+              <div class="calcPopup__lineRangeWrapper">
+                <input name="term" type="range" step="0.5" max="5" value="0" class="calcPopup__lineRange calcPopup__lineRange_second" id="myRange2" oninput="range()">
+              </div>
+              <div class="calcPopup__lineValues">
+                <span class="textSmallGotham calcPopup__lineVars">от 6 мес</span>
+                <span class="textSmallGotham calcPopup__lineVars">до 5 лет</span>
+              </div>
+            </div>
+            <button class="calcPopup__btn calcPopup__btn_next button button_minW button_dark">Далее</button>
+          </div>
+          <div class="calcPopup__forms">
+            <div class="formSection__inputBlocke inputBlock">
+              <input type="text" name="name" placeholder="Имя" class="input">
+              <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+            </div>
+            <div class="formSection__inputBlocke inputBlock">
+              <input type="text" name="phone" placeholder="Телефон" class="input">
+              <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+            </div>
+            <div class="formSection__inputBlocke inputBlock ">
+              <input type="text" name="email" placeholder="Эл. почта" class="input ">
+              <span class="inputBlock__errorText">Это поле может сожержать только буквы, цифры, пробелы и тире, до 50 символов</span>
+            </div>
+            <label for="checkboxPopup" class="calcPopup__label checkbox">
+              <input type="checkbox" id="checkboxPopup" name="checkboxPopup" class="checkbox__check">
+              <span class="checkboxText textMiddle textGrey">
+                <span class="checkboxText__text">
+                  Я согласен на обработку моих персонадбных данных
+                </span>
+              </span>
+            </label>
+            <div class="calcPopup__btns">
+              <button class="calcPopup__btn button calcPopup__btn_prev button_minW">Назад</button>
+              <button type="submit" class="calcPopup__btn calcPopup__btn_ml button button_dark button_minW">Отправить заявку</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+      
+    <button class="calcPopup__btn_prev calcPopup__btn_mob">
+      <img src="img/left.svg" alt="" class="svg calcPopup__leftIcon">
+    </button>
+  </div>
+  <div class="textPopup" id="textPopup">
+    <h4 class="textPopup__title h4 null">Политика конфиденциальности</h4>
+    <ul class="textPopup__list">
+      <li class="textPopup__item">
+        <span class="textLarge textPopup__itemText">Настоящая Политика конфиденциальности персональных данных (далее – Политика конфиденциальности) действует в отношении всей информации, которую компания «United Capital», расположенная на доменном имени (адрес сайта), может получить о Пользователе во время использования сайта Интернет-магазина, программ и продуктов Интернет-магазина.</span>
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1 В настоящей Политике конфиденциальности используются следующие термины:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.1. «Администрация сайта (далее – Администрация)» – уполномоченные сотрудники на управления сайтом, действующие от имени United Capital, которые организуют и (или) осуществляет обработку персональных данных, а также определяет цели обработки персональных данных, состав персональных данных, подлежащих обработке, действия (операции), совершаемые с персональными данными.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.2. «Персональные данные» - любая информация, относящаяся к прямо или косвенно определенному или определяемому физическому лицу (субъекту персональных данных).
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.3. «Обработка персональных данных» - любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.4. «Конфиденциальность персональных данных» - обязательное для соблюдения Администрации или иным получившим доступ к персональным данным лицом требование не допускать их распространения без согласия субъекта персональных данных или наличия иного законного основания.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.5. «Пользователь сайта (далее Пользователь)» – лицо, имеющее доступ к Сайту, посредством сети Интернет и использующее Сайт.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.6. «Cookies» — небольшой фрагмент данных, отправленный веб-сервером и хранимый на компьютере пользователя, который веб-клиент или веб-браузер каждый раз пересылает веб-серверу в HTTP-запросе при попытке открыть страницу соответствующего сайта.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            1.1.7. «IP-адрес» — уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу IP.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">2. ОБЩИЕ ПОЛОЖЕНИЯ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            2.1. Использование Пользователем сайта означает согласие с настоящей Политикой конфиденциальности и условиями обработки персональных данных Пользователя.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            2.2. В случае несогласия с условиями Политики конфиденциальности Пользователь должен прекратить использование сайта. 
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            2.3.Настоящая Политика конфиденциальности применяется только к сайту компании «United Capital». Сайт не контролирует и не несет ответственность за сайты третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на сайте.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            2.4. Администрация сайта не проверяет достоверность персональных данных, предоставляемых Пользователем сайта.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.1. Настоящая Политика конфиденциальности устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет по запросу Администрации сайта при регистрации на сайте или при оформлении заказа для приобретения услуги.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.2. Персональные данные, разрешённые к обработке в рамках настоящей Политики конфиденциальности, предоставляются Пользователем путём заполнения регистрационной формы на сайте компании “United Capital” всех страницах сайта и включают в себя следующую информацию:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.2.1. имя Пользователя;
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.2.2. контактный телефон Пользователя;
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.2.3. адрес электронной почты (e-mail);
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.2.4. вопрос Пользователя.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.3. Сайт защищает данные, которые автоматически передаются в процессе просмотра рекламных блоков и при посещении страниц, на которых установлен статистический скрипт системы ("пиксель"):
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            IP адрес;  
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            информация из cookies;
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            информация о браузере (или иной программе, которая осуществляет доступ к показу рекламы);
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            время доступа;
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            адрес страницы, на которой расположен рекламный блок; 
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            реферер (адрес предыдущей страницы).
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.3.1. Отключение cookies может повлечь невозможность доступа к частям сайта.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.3.2. Сайт осуществляет сбор статистики об IP-адресах своих посетителей. Данная информация используется с целью выявления и решения технических проблем.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            3.4. Любая иная персональная информация не оговоренная выше подлежит надежному хранению и нераспространению, за исключением случаев, предусмотренных в п.п. 5.2. и 5.3. настоящей Политики конфиденциальности.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1. Персональные данные Пользователя Администрация сайта может использовать в целях:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.1. Идентификации Пользователя, зарегистрированного на сайте для оформления заказа дистанционным способом с “United Capital”.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.2. Предоставления Пользователю доступа к персонализированным ресурсам сайта.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов, касающихся использования сайта, оказания услуг, обработка запросов и заявок от Пользователя.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения мошенничества
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.6. Создания учетной записи, если Пользователь дал согласие на создание учетной записи.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.7. Уведомления Пользователя сайта о состоянии заявки.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.8. Обработки и получения платежей, подтверждения налога или налоговых льгот, оспаривания платежа, определения права на получение кредитной линии Пользователем.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.9. Предоставления Пользователю эффективной клиентской и технической поддержки при возникновении проблем связанных с использованием сайта.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.10. Предоставления Пользователю с его согласия, обновлений продукции, специальных предложений, информации о ценах, новостной рассылки и иных сведений от имени сайта или от имени партнеров.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.11. Осуществления рекламной деятельности с согласия Пользователя.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            4.1.12. Предоставления доступа Пользователю на сайты или сервисы партнеров с целью получения продуктов, обновлений и услуг.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.1. Обработка персональных данных Пользователя осуществляется без ограничения срока, любым законным способом, в том числе в информационных системах персональных данных с использованием средств автоматизации или без использования таких средств.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.2. Пользователь соглашается с тем, что Администрация сайта вправе передавать персональные данные третьим лицам, в частности, курьерским службам, организациями почтовой связи, операторам электросвязи, исключительно в целях выполнения заказа Пользователя, оформленного на сайте «United Capital».
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.3. Персональные данные Пользователя могут быть переданы уполномоченным органам государственной власти Российской Федерации только по основаниям и в порядке, установленным законодательством Российской Федерации.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.4. При утрате или разглашении персональных данных Администрация сайта информирует Пользователя об утрате или разглашении персональных данных.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.5. Администрация сайта принимает необходимые организационные и технические меры для защиты персональной информации Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий третьих лиц.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            5.6. Администрация сайта совместно с Пользователем принимает все необходимые меры по предотвращению убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных данных Пользователя.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">6. ОБЯЗАТЕЛЬСТВА СТОРОН</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.1. Пользователь обязан:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.1.1. Предоставить информацию о персональных данных, необходимую для пользования сайтом.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.1.2. Обновить, дополнить предоставленную информацию о персональных данных в случае изменения данной информации.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.2. Администрация сайта обязана:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.2.1. Использовать полученную информацию исключительно для целей, указанных в п. 4 настоящей Политики конфиденциальности.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен, опубликование, либо разглашение иными возможными способами переданных персональных данных Пользователя, за исключением п.п. 5.2. и 5.3. настоящей Политики Конфиденциальности.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных Пользователя согласно порядку, обычно используемого для защиты такого рода информации в существующем деловом обороте.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            6.2.4. Осуществить блокирование персональных данных, относящихся к соответствующему Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо уполномоченного органа по защите прав субъектов персональных данных на период проверки, в случае выявления недостоверных персональных данных или неправомерных действий.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">7. ОТВЕТСТВЕННОСТЬ СТОРОН</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            7.1. Администрация сайта, не исполнившая свои обязательства, несёт ответственность за убытки, понесенные Пользователем в связи с неправомерным использованием персональных данных, в соответствии с законодательством Российской Федерации, за исключением случаев, предусмотренных п.п. 5.2., 5.3. и 7.2. настоящей Политики Конфиденциальности.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            7.2. В случае утраты или разглашения Конфиденциальной информации Администрация сайта не несёт ответственность, если данная конфиденциальная информация:
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            7.2.1. Стала публичным достоянием до её утраты или разглашения.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            7.2.2. Была получена от третьей стороны до момента её получения Администрацией сайта.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            7.2.3. Была разглашена с согласия Пользователя.
+          </li>
+        </ul>
+      
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">8. РАЗРЕШЕНИЕ СПОРОВ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            8.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем и Администрацией сайта, обязательным является предъявление претензии (письменного предложения о добровольном урегулировании спора).
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            8.2. Получатель претензии в течение 30 календарных дней со дня получения претензии, письменно уведомляет заявителя претензии о результатах рассмотрения претензии.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            8.3. При недостижении соглашения спор будет передан на рассмотрение в судебный орган в соответствии с действующим законодательством Российской Федерации.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            8.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией сайта применяется действующее законодательство Российской Федерации.
+          </li>
+        </ul>
+      </li>
+      <li class="textPopup__item">
+        <span class="textLarge bold textPopup__itemTitle">9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ</span>
+        <ul class="textPopup__list11">
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            9.1. Администрация сайта вправе вносить изменения в настоящую Политику конфиденциальности без согласия Пользователя.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            9.2. Новая Политика конфиденциальности вступает в силу с момента ее размещения на сайте, если иное не предусмотрено новой редакцией Политики конфиденциальности.
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            9.3. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать info@united-capital.ru
+          </li>
+          <li class="textPopup__item11 textPopup__itemText textLarge">
+            9.4. Действующая Политика конфиденциальности размещена на странице по адресу (адрес сайта).
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- /Popup -->
+
+
+  <!-- Footer -->
+  <footer class="footer wrapper">
+    <div class="footer__wrapper">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a href="saving.html" class="footer__link textMiddle bold">Сбережения</a>
+        </li>
+        <li class="footer__item">
+          <a href="credit.html" class="footer__link textMiddle bold">Займы</a>
+        </li>
+        <li class="footer__item">
+          <a href="partners.html" class="footer__link textMiddle bold">Партнерам</a>
+        </li>
+        <li class="footer__item">
+          <a href="faq.html" class="footer__link textMiddle bold">Вопросы - ответы</a>
+        </li>
+        <li class="footer__item">
+          <a href="aboutProject.html" class="footer__link textMiddle bold">О проекте</a>
+        </li>
+        <li class="footer__item">
+          <a href="contacts.html" class="footer__link textMiddle bold">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__infs footer__wrapper">
+      <ul class="footer__list2">
+        <li class="footer__item2">
+          <a href="#textPopup" target="_blank" class="fancybox footer__link2 text footer__link">Политика конфиденциальности</a>
+        </li>
+        <li class="footer__item2">
+          <a href="aboutProject.html" target="_blank" class="footer__link2 text footer__link">Юридическая информация</a>
+        </li>
+      </ul>
+      <div class="footer__sohial sohial">
+        <a target="_blank" href="https://www.facebook.com/unitedcapitals" class=" sohial__link">
+          <img src="img/facebook.svg" alt="" class="svg sohial__icon">
+        </a>
+        <a target="_blank" href="https://vk.com/unitedcapitals" class=" sohial__link">
+          <img src="img/vk.svg" alt="" class="svg sohial__icon">
+        </a>
+        <a target="_blank" href="https://www.youtube.com/unitedcapitals" class=" sohial__link">
+          <img src="img/youtube.svg" alt="" class="svg sohial__icon ">
+        </a> 
+        <a target="_blank" href="https://www.instagram.com/unitedcapitals" class=" sohial__link">
+          <img src="img/insta.svg" alt="" class="svg sohial__icon ">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <!-- /Footer -->
+  <!-- jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+  <!-- /jquery -->
+
+  <!-- Slisk slider -->
+  <script src="libs/slider/slick.min.js"></script>
+  <!-- /Slisk slider -->
+
+  <!-- Fancybox -->
+  <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+  <!-- /Fancybox -->
+
+  <!-- MaskeInput -->
+  <script src="libs/maskedinput/jquery.maskedinput.min.js"></script>
+  <!-- /MaskeInput -->
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
